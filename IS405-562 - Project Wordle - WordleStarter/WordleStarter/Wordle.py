@@ -13,7 +13,12 @@ from WordleGraphics import WordleGWindow, N_COLS, N_ROWS
 
 def wordle():
     def enter_action(s):
-        gw.show_message("You have to implement this method.")
+        entered_word = s.lower()  # Convert entered word to lowercase for case-insensitive comparison
+        if entered_word in FIVE_LETTER_WORDS:
+            gw.show_message("You guessed a valid word.")
+        else:
+            gw.show_message("Not in word list")
+        
 
     def placeWordFirstRow(wordlewindow):
         row = 0
