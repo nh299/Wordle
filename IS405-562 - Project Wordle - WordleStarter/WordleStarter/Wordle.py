@@ -139,12 +139,8 @@ def setup_screen():
     tk.Button(root, text="Start Game", command=on_submit).pack(pady=20)
 
     root.mainloop()
-    
+
 if __name__ == "__main__":
     setup_screen()
 
 
-
-
-# if __name__ == "__main__":
-#     wordle()
